@@ -1,0 +1,21 @@
+{
+  "cta.portfolio": "My Portfolio",
+  "cta.visitPortfolio": "Visit Portfolio",
+  "hero.title": "VM Home",
+  "hero.subtitle": "Welcome. This page consolidates navigation and infrastructure status for this VM.",
+  "hero.about": "Luccas Carneiro — Power Platform & Dynamics 365 developer (PL‑200) and Information Systems student.",
+  "vm.overview": "VM Overview",
+  "vm.site": "IIS Site",
+  "vm.apps": "Applications",
+  "vm.defaultDoc": "Default Document",
+  "vm.pool": "Application Pool",
+  "vm.quickAccess": "Quick Access",
+  "vm.hintOpen": "Tip: enable HTTPS and SNI in site bindings for production.",
+  "features.title": "Features",
+  "features.matrix": "Matrix background with persistent toggle (localStorage).",
+  "features.theme": "Light/Dark theme with persistence.",
+  "features.i18n": "I18n PT‑BR/EN‑US via JSON (client-side).",
+  "features.modular": "Responsive layout, reusable components and CTAs to sub‑apps.",
+  "app.root": "Root (/)",
+  "app.home": "Home (/Home)"
+}

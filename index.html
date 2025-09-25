@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VM Home — Landing</title>
+  <meta name="description" content="Home da VM — Navegação rápida para apps hospedados, status e links de suporte.">
+  <link rel="icon" type="image/png" href="https://github.com/luccas00.png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Ajustes pontuais para a Home da VM */
+    .kpis{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:12px }
+    .kpi{ background:var(--badge-bg); border:1px solid var(--border); border-radius:12px; padding:14px }
+    .apps{ display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px }
+    .muted{ color:var(--muted) }
+    .pill{ display:inline-block; padding:2px 8px; border:1px solid var(--border); border-radius:999px; font-size:.85rem; background:var(--badge-bg) }
+    .topbar{ display:flex; align-items:center; gap:12px; justify-content:space-between }
+  </style>
+</head>
+<body style="margin:0; padding:0; overflow-x:hidden; overflow-y:auto;">
+  <!-- Matrix toggle rendered by matrix.js/common.js -->
+  <div class="matrix-toggle"><button id="toggle-matrix" type="button">Desativar Matrix</button></div>
+
+  <main class="container">
+
+    <section class="card navbar" aria-label="Toolbar">
+      <div class="theme-switch" role="group" aria-label="Theme switch">
+        <button class="lang-opt theme-opt" data-theme="dark">Dark</button>
+        <button class="lang-opt theme-opt" data-theme="light">Light</button>
+      </div>
+      <div class="cta-grid">
+        <a class="btn with-icon" href="https://luccas00.github.io" target="_blank" rel="noopener">
+          <img class="icon" src="https://simpleicons.org/icons/github.svg" alt="GitHub">
+          <span data-i18n="cta.portfolio">Meu Portfólio</span>
+        </a>
+        <a class="btn" href="/Angular/" target="_self">/Angular</a>
+        <a class="btn" href="/Dotnet_MVC/" target="_self">/Dotnet_MVC</a>
+        <a class="btn" href="/Java/" target="_self">/Java</a>
+        <a class="btn" href="/React/" target="_self">/React</a>
+        <a class="btn" href="/Vite/" target="_self">/Vite</a>
+        <a class="btn" href="/Static/" target="_self">/Static</a>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language switch">
+        <button class="lang-opt is-active" data-lang="pt-BR">PT-BR</button>
+        <button class="lang-opt" data-lang="en-US">EN-US</button>
+      </div>
+    </section>
+
+    <section class="card hero">
+      <div style="display:grid; grid-template-columns: 200px 1fr; gap:24px; align-items:center;">
+        <div class="center">
+          <a href="https://luccas00.github.io" target="_blank" rel="noopener">
+            <img src="https://github.com/luccas00.png" alt="Luccas" width="160"
+                 style="border-radius:50%; border:3px solid var(--border);">
+          </a>
+        </div>
+        <div class="intro-main">
+          <div class="title-actions">
+            <h1 data-i18n="hero.title">Home da VM</h1>
+            <a class="btn" href="https://luccas00.github.io" target="_blank" rel="noopener" data-i18n="cta.visitPortfolio">Visitar Portfólio</a>
+          </div>
+          <h2 class="muted" data-i18n="hero.subtitle">Bem-vindo. Esta página consolida navegação e status da infraestrutura desta VM.</h2>
+          <p data-i18n="hero.about">Luccas Carneiro — Desenvolvedor Power Platform & Dynamics 365 (PL‑200) e estudante de Sistemas de Informação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title"><h2>ℹ️</h2><h2 data-i18n="vm.overview">Visão Geral da VM</h2></div>
+      <div class="kpis">
+        <div class="kpi"><strong data-i18n="vm.site">Site IIS</strong><br><span class="muted">VM</span></div>
+        <div class="kpi"><strong data-i18n="vm.apps">Aplicações</strong><br><span class="muted">/Angular · /Dotnet_MVC · /Java · /React · /Static · /Vite</span></div>
+        <div class="kpi"><strong data-i18n="vm.defaultDoc">Documento Padrão</strong><br><span class="muted">index.html</span></div>
+        <div class="kpi"><strong data-i18n="vm.pool">Application Pool</strong><br><span class="muted">VM</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-title"><h2>🚀</h2><h2 data-i18n="vm.quickAccess">Acesso Rápido</h2></div>
+      <div class="apps">
+        <a class="btn" href="/" data-i18n="app.root">Raiz (/)</a>
+        <a class="btn" href="/Home/" data-i18n="app.home">Home (/Home)</a>
+        <a class="btn" href="/Angular/" >/Angular</a>
+        <a class="btn" href="/Dotnet_MVC/" >/Dotnet_MVC</a>
+        <a class="btn" href="/Java/" >/Java</a>
+        <a class="btn" href="/React/" >/React</a>
+        <a class="btn" href="/Vite/" >/Vite</a>
+        <a class="btn" href="/Static/" >/Static</a>
+      </div>
+      <p class="muted" style="margin-top:8px" data-i18n="vm.hintOpen">Dica: habilite HTTPS e SNI nos Bindings do site para produção.</p>
+    </section>
+
+    <section class="card">
+      <div class="section-title"><h2>🧩</h2><h2 data-i18n="features.title">Funcionalidades</h2></div>
+      <ul>
+        <li data-i18n="features.matrix">Efeito Matrix com toggle persistente (localStorage).</li>
+        <li data-i18n="features.theme">Tema claro/escuro com persistência.</li>
+        <li data-i18n="features.i18n">I18n PT‑BR/EN‑US via JSON (client-side).</li>
+        <li data-i18n="features.modular">Layout responsivo, componentes reutilizáveis e CTAs para subaplicações.</li>
+      </ul>
+    </section>
+
+    <footer class="container center">
+      <p>© <span id="y"></span> VM Home — Luccas Carneiro</p>
+      <p class="muted">Background Matrix by RezMason — MIT.</p>
+    </footer>
+  </main>
+
+  <script src="js/common.js"></script>
+  <script src="js/matrix.js" defer></script>
+</body>
+</html>

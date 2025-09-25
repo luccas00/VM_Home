@@ -1,0 +1,21 @@
+{
+  "cta.portfolio": "Meu Portfólio",
+  "cta.visitPortfolio": "Visitar Portfólio",
+  "hero.title": "Home da VM",
+  "hero.subtitle": "Bem-vindo. Esta página consolida navegação e status da infraestrutura desta VM.",
+  "hero.about": "Luccas Carneiro — Desenvolvedor Power Platform & Dynamics 365 (PL‑200) e estudante de Sistemas de Informação.",
+  "vm.overview": "Visão Geral da VM",
+  "vm.site": "Site IIS",
+  "vm.apps": "Aplicações",
+  "vm.defaultDoc": "Documento Padrão",
+  "vm.pool": "Application Pool",
+  "vm.quickAccess": "Acesso Rápido",
+  "vm.hintOpen": "Dica: habilite HTTPS e SNI nos Bindings do site para produção.",
+  "features.title": "Funcionalidades",
+  "features.matrix": "Efeito Matrix com toggle persistente (localStorage).",
+  "features.theme": "Tema claro/escuro com persistência.",
+  "features.i18n": "I18n PT‑BR/EN‑US via JSON (client-side).",
+  "features.modular": "Layout responsivo, componentes reutilizáveis e CTAs para subaplicações.",
+  "app.root": "Raiz (/)",
+  "app.home": "Home (/Home)"
+}
